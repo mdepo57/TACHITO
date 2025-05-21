@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Partida - TACHITO</title>
+</head>
+<body>
+  <h2>⚔️ Juego en marcha...</h2>
+  <p>Jugador: <span id="jugador"></span></p>
+  <script>
+    document.getElementById('jugador').textContent = localStorage.getItem('playerName');
+  </script>
+</body>
+</html>
