@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TACHITO</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>🎉 TACHITO</h1>
+  <div id="pantallaInicio" class="inicio">
+    <select id="numHumanos" onchange="generarCamposJugadores()">
+      <option value="1">1 Humano</option><option value="2">2 Humanos</option>
+    </select>
+    <div id="camposJugadores"></div>
+    <select id="numBots"><option value="1">1 Bot</option></select>
+    <button onclick="iniciarJuego()">🎮 Iniciar Juego</button>
+  </div>
+  <div id="pantallaJuego" class="juego" style="display:none">
+    <div id="mesa" class="mesa-circular"></div>
+    <button onclick="intercambiarCarta()">🔁</button>
+    <button onclick="plantarse()">✋</button>
+    <div id="chatMensajes"></div>
+    <input id="chatInput" onkeydown="if(event.key==='Enter'){enviarMensaje()}" />
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

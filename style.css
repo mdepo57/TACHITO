@@ -1,0 +1,5 @@
+
+body { background: #0d2e13; color: white; font-family: sans-serif; text-align: center; }
+.jugador-carta { border-radius: 10px; background: #fff3; padding: 10px; color: white; }
+.repartidor { border: 2px solid gold; }
+.en-turno { border: 2px solid red; }
