@@ -1,1 +1,0 @@
-console.log("script.js cargado correctamente. Puedes empezar a programar aquí.")
