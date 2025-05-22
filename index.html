@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TACHITO</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="menu-container">
+    <h1>🎉 Bienvenido a <span class="logo">TACHITO</span></h1>
+    <label for="playerName">Nombre:</label>
+    <input type="text" id="playerName" placeholder="Nacho" />
+
+    <label for="visualMode">Modo visual:</label>
+    <select id="visualMode">
+      <option value="classic">Mesa clásica</option>
+      <option value="app">Modo App (beta)</option>
+    </select>
+
+    <label for="botDifficulty">Dificultad bots:</label>
+    <select id="botDifficulty">
+      <option value="easy">Fácil</option>
+      <option value="medium">Intermedio</option>
+      <option value="hard">Difícil (premium)</option>
+    </select>
+
+    <button onclick="startGame()">Iniciar Juego</button>
+    <button onclick="viewStats()">Estadísticas</button>
+  </div>
+
+  <script>
+    function startGame() {
+      const name = document.getElementById('playerName').value;
+      localStorage.setItem('playerName', name);
+      location.href = 'game.html';
+    }
+    function viewStats() {
+      alert("(En desarrollo) Mostrar historial de partidas guardado");
+    }
+  </script>
+</body>
+</html>
