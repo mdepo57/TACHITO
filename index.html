@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TACHITO - Inicio</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <h1>Bienvenido a TACHITO</h1>
+  <div>
+    <label>Nombre Jugador:</label>
+    <input type="text" id="nombreHumano" placeholder="Tu nombre">
+  </div>
+  <div>
+    <label>Cantidad de Bots:</label>
+    <select id="cantidadBots">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+    </select>
+  </div>
+  <div>
+    <label>Dificultad de Bots:</label>
+    <select id="dificultad">
+      <option value="facil">Fácil</option>
+      <option value="intermedio">Intermedio</option>
+      <option value="dificil">Difícil</option>
+    </select>
+  </div>
+  <button onclick="iniciarJuego()">Iniciar Juego</button>
+
+  <script src="menu.js"></script>
+</body>
+</html>
